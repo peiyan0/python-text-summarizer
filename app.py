@@ -266,7 +266,7 @@ with tab3:
     st.write("""
     This Advanced Text Summarizer uses efficient NLP models to generate concise summaries completely free of charge.
     
-    **Cost-Free Features:**
+    **Features:**
     - Efficient model selection (BART and T5-Small)
     - Model caching to reduce reloading
     - Memory-optimized settings
