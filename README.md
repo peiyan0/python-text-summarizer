@@ -1,4 +1,4 @@
-# Advanced AI Text Summarizer
+# AI Text Summarizer
 
 A sophisticated yet efficient web application that summarizes long articles into concise text using optimized Hugging Face Transformers models.
 
