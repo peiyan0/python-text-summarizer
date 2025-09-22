@@ -35,3 +35,7 @@ git clone https://github.com/your-username/python-text-summarizer.git
 cd python-text-summarizer
 pip install -r requirements.txt
 streamlit run app.py
+```
+## ☕ Support the Project
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/peiyan)
+
