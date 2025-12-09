@@ -1,38 +1,50 @@
-# AI Text Summarizer
+# 🤖 AI Text Summarizer: Concise Summary Generator
 
-A sophisticated yet efficient web application that summarizes long articles into concise text using optimized Hugging Face Transformers models.
+> A sophisticated yet efficient web application that leverages optimized Hugging Face Transformers models to condense lengthy articles into precise, readable summaries.
 
-## Features
+<p align="center">
+  <img src="https://img.shields.io/badge/Streamlit-Deployment-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit Deployment" />
+  <img src="https://img.shields.io/badge/Models-BART%20%7C%20T5--Small-blue?style=for-the-badge" alt="Models: BART | T5-Small" />
+</p>
 
-* Efficient model selection (BART and T5-Small)
-* Model caching to minimize resource usage
-* Memory-optimized settings
-* Text preprocessing options
-* Summary quality metrics
-* Export functionality
-* Session history (limited to conserve memory)
-* Responsive UI with efficient styling
+## ✨ Core Features & Benefits
 
-## Tech Stack
+| Icon | Feature | Benefit |
+| :---: | :--- | :--- |
+| ⚡ | **Efficient Model Selection** | Fast and balanced performance using optimized **BART** and **T5-Small** models. |
+| 🧠 | **Memory Optimized** | Features **model caching** and memory-efficient PyTorch settings to minimize resource usage and cost. |
+| ✂️ | **Advanced Preprocessing** | Options for custom text preprocessing to ensure high-quality, relevant summaries. |
+| 📜 | **Export & History** | Includes export functionality and limited session history (10 entries) for easy reference and management. |
+| 📱 | **Responsive UI** | Clean, compact, and responsive Streamlit interface with custom CSS for faster rendering. |
 
-* Python, Streamlit
-* Hugging Face Transformers (BART, T5-Small)
-* Torch with memory-efficient settings
-* Custom CSS for compact UI
+## 💻 Tech Stack
 
-## Optimizations
+| Category | Technologies |
+| :--- | :--- |
+| **Backend** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
+| **Framework** | ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) |
+| **AI/ML** | ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFB800?style=for-the-badge&logo=huggingface&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) |
+| **Models** | `BART`, `T5-Small` |
+| **Styling** | Custom CSS |
 
-1. **Model Caching**: Models are loaded once and cached for the session
-2. **Efficient Models**: Using smaller models when possible
-3. **Memory Limits**: History limited to 10 entries
-4. **Compact UI**: Reduced element sizes for faster rendering
-5. **Smart Loading**: Models only loaded when needed
+## ⚙️ Optimizations for Performance
 
-## Run Locally
+This application is engineered for speed and efficiency:
+1.  **Model Caching**: Models are initialized and cached upon the first use, eliminating redundant loading.
+2.  **Efficient Models**: Strategically uses smaller, less resource-intensive models (`T5-Small`) when possible.
+3.  **Memory Limits**: Session history is capped at 10 entries to conserve memory during long sessions.
+4.  **Compact UI**: Uses custom CSS to reduce element sizes, leading to a faster and more compact user interface.
+5.  **Smart Loading**: Models are loaded only when a summarization request is made, optimizing startup time.
+
+## 🚀 Run Locally
 
 ```bash
-git clone https://github.com/your-username/python-text-summarizer.git
+# Clone the repository
+git clone [https://github.com/your-username/python-text-summarizer.git](https://github.com/your-username/python-text-summarizer.git)
 cd python-text-summarizer
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the application
 streamlit run app.py
-```
