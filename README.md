@@ -40,7 +40,7 @@ This application is engineered for speed and efficiency:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/your-username/python-text-summarizer.git](https://github.com/your-username/python-text-summarizer.git)
+git clone https://github.com/peiyan0/python-text-summarizer.git
 cd python-text-summarizer
 
 # Install dependencies using uv
