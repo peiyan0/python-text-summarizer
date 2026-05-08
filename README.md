@@ -43,8 +43,9 @@ This application is engineered for speed and efficiency:
 git clone [https://github.com/your-username/python-text-summarizer.git](https://github.com/your-username/python-text-summarizer.git)
 cd python-text-summarizer
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies using uv
+uv sync
 
 # Run the application
-streamlit run app.py
+uv run streamlit run app.py
+```

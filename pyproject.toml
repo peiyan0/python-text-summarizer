@@ -1,0 +1,16 @@
+[project]
+name = "text-summarizer-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=0.20.0",
+    "pandas>=1.5.0",
+    "protobuf>=3.20.0",
+    "sentencepiece>=0.1.97",
+    "streamlit>=1.22.0",
+    "torch>=2.0.0",
+    "torchvision>=0.26.0",
+    "transformers>=4.30.0,<5.0.0",
+]
