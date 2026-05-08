@@ -165,19 +165,20 @@ with tab1:
                     # Generate summary
                     start_time = time.time()
                     
-                    # Adjust length based on model
+                    # Adjust length based on model with self-correcting bounds to ensure min_len < max_len
                     if model_option == "T5-Small (Faster)":
-                        max_len = min(summary_length + 20, 100)  # Conservative limits for T5-small
-                        min_len = max(summary_length - 20, 30)
+                        max_len = min(summary_length + 20, 150)
+                        min_len = min(max(summary_length - 20, 10), max_len - 10)
                     else:
                         max_len = summary_length + 30
-                        min_len = max(summary_length - 30, 30)
+                        min_len = min(max(summary_length - 30, 10), max_len - 10)
                     
                     summary = summarizer(
                         processed_text, 
                         max_length=max_len,
                         min_length=min_len,
-                        do_sample=False
+                        do_sample=False,
+                        truncation=True
                     )
                     
                     processing_time = time.time() - start_time
